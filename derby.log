@@ -1,0 +1,10 @@
+----------------------------------------------------------------
+Thu Mar 31 22:10:37 PDT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-0153-d03a-f200-00000471e1f0 
+on database directory D:\Java Projects\A00918606GIS\lab_db  with class loader sun.misc.Launcher$AppClassLoader@4e0e2f2a 
+Loaded from file:/D:/Java%20Projects/A00918606GIS/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_71-b15
+user.dir=D:\Java Projects\A00918606GIS
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

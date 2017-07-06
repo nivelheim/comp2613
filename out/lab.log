@@ -1,0 +1,142 @@
+2015-12-06 18:03:07,071 main INFO  gis.Gis (Gis.java:80) - 2015-12-07T02:03:07.068Z
+2015-12-06 18:03:07,119 main DEBUG gis.Gis (Gis.java:113) - init()
+2015-12-06 18:03:07,120 main DEBUG data.Database (Database.java:39) - Loading database properties from db.properties
+2015-12-06 18:03:07,123 main DEBUG data.AllData (AllData.java:48) - loading the data
+2015-12-06 18:03:07,124 main DEBUG io.GameReader (GameReader.java:47) - ReadingD:\School\COMP2613 FULL\Solutions\A00918606GIS\Gis\out\games.dat
+2015-12-06 18:03:07,128 main DEBUG io.PlayerReader (PlayerReader.java:49) - ReadingD:\School\COMP2613 FULL\Solutions\A00918606GIS\Gis\out\players.dat
+2015-12-06 18:03:07,135 main DEBUG io.PersonaReader (PersonaReader.java:47) - ReadingD:\School\COMP2613 FULL\Solutions\A00918606GIS\Gis\out\personas.dat
+2015-12-06 18:03:07,137 main DEBUG io.ScoreReader (ScoreReader.java:47) - ReadingD:\School\COMP2613 FULL\Solutions\A00918606GIS\Gis\out\scores.dat
+2015-12-06 18:03:07,140 main DEBUG data.Database (Database.java:59) - org.apache.derby.jdbc.EmbeddedDriver
+2015-12-06 18:03:15,022 main DEBUG data.Database (Database.java:64) - Database connected
+2015-12-06 18:03:15,295 main DEBUG dao.PlayerDao (PlayerDao.java:51) - Creating database table Players
+2015-12-06 18:03:15,296 main DEBUG dao.Dao (Dao.java:64) - CREATE TABLE Players(id INTEGER, firstName VARCHAR(40), lastName VARCHAR(40), emailAddress VARCHAR(40), birthDate TIMESTAMP, PRIMARY KEY (id))
+2015-12-06 18:03:15,477 main DEBUG dao.GameDao (GameDao.java:46) - Creating database table Games
+2015-12-06 18:03:15,479 main DEBUG dao.Dao (Dao.java:64) - CREATE TABLE Games(gameId VARCHAR(4), gameName VARCHAR(40), producer VARCHAR(40), PRIMARY KEY (gameId))
+2015-12-06 18:03:15,844 main DEBUG dao.PersonaDao (PersonaDao.java:46) - Creating database table Personas
+2015-12-06 18:03:15,845 main DEBUG dao.Dao (Dao.java:64) - CREATE TABLE Personas(personaId INTEGER, playerId INTEGER, gamerTag VARCHAR(40), platform VARCHAR(2), PRIMARY KEY (personaId))
+2015-12-06 18:03:16,045 main DEBUG dao.ScoreDao (ScoreDao.java:46) - Creating database table Scores
+2015-12-06 18:03:16,046 main DEBUG dao.Dao (Dao.java:64) - CREATE TABLE Scores(personaId INTEGER, gameId VARCHAR(4), winLoss BOOLEAN)
+2015-12-06 18:03:16,139 main DEBUG gis.Gis (Gis.java:144) - loadData()
+2015-12-06 18:03:16,142 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Games values('CODE', 'Colour Demon', 'Magenta Boxer')
+2015-12-06 18:03:16,200 main DEBUG dao.GameDao (GameDao.java:60) - Added 1 rows
+2015-12-06 18:03:16,201 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Games values('NUPI', 'Number Picker', 'Random Numburrs')
+2015-12-06 18:03:16,213 main DEBUG dao.GameDao (GameDao.java:60) - Added 1 rows
+2015-12-06 18:03:16,214 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Games values('QUFI', 'Quick Fingers', 'Digitology')
+2015-12-06 18:03:16,242 main DEBUG dao.GameDao (GameDao.java:60) - Added 1 rows
+2015-12-06 18:03:16,243 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Players values(1, 'Fred', 'Fish', 'fredfish@gamer.net', '1977-02-22 00:00:00.0')
+2015-12-06 18:03:16,250 main DEBUG dao.PlayerDao (PlayerDao.java:66) - Added 1 rows
+2015-12-06 18:03:16,251 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Players values(2, 'Laurie', 'Nash', 'laurieeenash@gmail.com', '1982-07-28 00:00:00.0')
+2015-12-06 18:03:16,254 main DEBUG dao.PlayerDao (PlayerDao.java:66) - Added 1 rows
+2015-12-06 18:03:16,254 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Players values(3, 'Conrad', 'Washington', 'fredfish@gamer.net', '1972-06-12 00:00:00.0')
+2015-12-06 18:03:16,257 main DEBUG dao.PlayerDao (PlayerDao.java:66) - Added 1 rows
+2015-12-06 18:03:16,258 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Players values(4, 'Jeanette', 'Price', 'priceizrite@hotmail.com', '2001-09-03 00:00:00.0')
+2015-12-06 18:03:16,261 main DEBUG dao.PlayerDao (PlayerDao.java:66) - Added 1 rows
+2015-12-06 18:03:16,262 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Players values(5, 'Mark', 'Chan', 'mchan@oneminutemail.com', '1995-03-01 00:00:00.0')
+2015-12-06 18:03:16,265 main DEBUG dao.PlayerDao (PlayerDao.java:66) - Added 1 rows
+2015-12-06 18:03:16,265 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Personas values(1, 1, 'Ithroeann', 'IO')
+2015-12-06 18:03:16,269 main DEBUG dao.PersonaDao (PersonaDao.java:60) - Added 1 rows
+2015-12-06 18:03:16,269 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Personas values(2, 1, 'Cirronith', 'PS')
+2015-12-06 18:03:16,273 main DEBUG dao.PersonaDao (PersonaDao.java:60) - Added 1 rows
+2015-12-06 18:03:16,274 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Personas values(3, 1, 'Deathstar', 'IO')
+2015-12-06 18:03:16,277 main DEBUG dao.PersonaDao (PersonaDao.java:60) - Added 1 rows
+2015-12-06 18:03:16,278 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Personas values(4, 2, 'Mazzzap', 'AN')
+2015-12-06 18:03:16,282 main DEBUG dao.PersonaDao (PersonaDao.java:60) - Added 1 rows
+2015-12-06 18:03:16,283 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Personas values(5, 2, 'Redstripe', 'PC')
+2015-12-06 18:03:16,287 main DEBUG dao.PersonaDao (PersonaDao.java:60) - Added 1 rows
+2015-12-06 18:03:16,288 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Personas values(6, 3, 'Crayonbreath', 'PS')
+2015-12-06 18:03:16,294 main DEBUG dao.PersonaDao (PersonaDao.java:60) - Added 1 rows
+2015-12-06 18:03:16,294 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Personas values(7, 4, 'Quinesia', 'XB')
+2015-12-06 18:03:16,297 main DEBUG dao.PersonaDao (PersonaDao.java:60) - Added 1 rows
+2015-12-06 18:03:16,298 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Personas values(8, 4, 'VolcanoBrawler', 'PC')
+2015-12-06 18:03:16,301 main DEBUG dao.PersonaDao (PersonaDao.java:60) - Added 1 rows
+2015-12-06 18:03:16,302 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Personas values(9, 5, 'CastleRock', 'XB')
+2015-12-06 18:03:16,307 main DEBUG dao.PersonaDao (PersonaDao.java:60) - Added 1 rows
+2015-12-06 18:03:16,308 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Personas values(10, 5, 'TorpedoBear', 'PC')
+2015-12-06 18:03:16,312 main DEBUG dao.PersonaDao (PersonaDao.java:60) - Added 1 rows
+2015-12-06 18:03:16,312 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Personas values(11, 5, 'GreenPanda', 'AN')
+2015-12-06 18:03:16,316 main DEBUG dao.PersonaDao (PersonaDao.java:60) - Added 1 rows
+2015-12-06 18:03:16,316 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Scores values(11, 'NUPI', true)
+2015-12-06 18:03:16,320 main DEBUG dao.ScoreDao (ScoreDao.java:59) - Added 1 rows
+2015-12-06 18:03:16,320 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Scores values(8, 'QUFI', false)
+2015-12-06 18:03:16,323 main DEBUG dao.ScoreDao (ScoreDao.java:59) - Added 1 rows
+2015-12-06 18:03:16,324 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Scores values(4, 'CODE', false)
+2015-12-06 18:03:16,327 main DEBUG dao.ScoreDao (ScoreDao.java:59) - Added 1 rows
+2015-12-06 18:03:16,328 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Scores values(5, 'QUFI', true)
+2015-12-06 18:03:16,330 main DEBUG dao.ScoreDao (ScoreDao.java:59) - Added 1 rows
+2015-12-06 18:03:16,331 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Scores values(1, 'QUFI', false)
+2015-12-06 18:03:16,333 main DEBUG dao.ScoreDao (ScoreDao.java:59) - Added 1 rows
+2015-12-06 18:03:16,334 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Scores values(3, 'QUFI', true)
+2015-12-06 18:03:16,336 main DEBUG dao.ScoreDao (ScoreDao.java:59) - Added 1 rows
+2015-12-06 18:03:16,337 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Scores values(7, 'CODE', true)
+2015-12-06 18:03:16,340 main DEBUG dao.ScoreDao (ScoreDao.java:59) - Added 1 rows
+2015-12-06 18:03:16,340 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Scores values(2, 'CODE', true)
+2015-12-06 18:03:16,343 main DEBUG dao.ScoreDao (ScoreDao.java:59) - Added 1 rows
+2015-12-06 18:03:16,343 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Scores values(4, 'NUPI', false)
+2015-12-06 18:03:16,345 main DEBUG dao.ScoreDao (ScoreDao.java:59) - Added 1 rows
+2015-12-06 18:03:16,346 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Scores values(10, 'NUPI', true)
+2015-12-06 18:03:16,349 main DEBUG dao.ScoreDao (ScoreDao.java:59) - Added 1 rows
+2015-12-06 18:03:16,349 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Scores values(9, 'QUFI', false)
+2015-12-06 18:03:16,351 main DEBUG dao.ScoreDao (ScoreDao.java:59) - Added 1 rows
+2015-12-06 18:03:16,352 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Scores values(4, 'QUFI', true)
+2015-12-06 18:03:16,355 main DEBUG dao.ScoreDao (ScoreDao.java:59) - Added 1 rows
+2015-12-06 18:03:16,355 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Scores values(5, 'CODE', false)
+2015-12-06 18:03:16,359 main DEBUG dao.ScoreDao (ScoreDao.java:59) - Added 1 rows
+2015-12-06 18:03:16,360 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Scores values(1, 'QUFI', true)
+2015-12-06 18:03:16,362 main DEBUG dao.ScoreDao (ScoreDao.java:59) - Added 1 rows
+2015-12-06 18:03:16,362 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Scores values(6, 'QUFI', true)
+2015-12-06 18:03:16,365 main DEBUG dao.ScoreDao (ScoreDao.java:59) - Added 1 rows
+2015-12-06 18:03:16,366 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Scores values(8, 'NUPI', false)
+2015-12-06 18:03:16,401 main DEBUG dao.ScoreDao (ScoreDao.java:59) - Added 1 rows
+2015-12-06 18:03:16,401 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Scores values(7, 'NUPI', true)
+2015-12-06 18:03:16,404 main DEBUG dao.ScoreDao (ScoreDao.java:59) - Added 1 rows
+2015-12-06 18:03:16,405 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Scores values(5, 'NUPI', true)
+2015-12-06 18:03:16,408 main DEBUG dao.ScoreDao (ScoreDao.java:59) - Added 1 rows
+2015-12-06 18:03:16,408 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Scores values(3, 'QUFI', true)
+2015-12-06 18:03:16,409 main DEBUG dao.ScoreDao (ScoreDao.java:59) - Added 1 rows
+2015-12-06 18:03:16,410 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Scores values(2, 'CODE', true)
+2015-12-06 18:03:16,410 main DEBUG dao.ScoreDao (ScoreDao.java:59) - Added 1 rows
+2015-12-06 18:03:16,411 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Scores values(5, 'CODE', true)
+2015-12-06 18:03:16,413 main DEBUG dao.ScoreDao (ScoreDao.java:59) - Added 1 rows
+2015-12-06 18:03:16,413 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Scores values(8, 'NUPI', false)
+2015-12-06 18:03:16,414 main DEBUG dao.ScoreDao (ScoreDao.java:59) - Added 1 rows
+2015-12-06 18:03:16,415 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Scores values(11, 'NUPI', false)
+2015-12-06 18:03:16,417 main DEBUG dao.ScoreDao (ScoreDao.java:59) - Added 1 rows
+2015-12-06 18:03:16,418 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Scores values(8, 'CODE', false)
+2015-12-06 18:03:16,423 main DEBUG dao.ScoreDao (ScoreDao.java:59) - Added 1 rows
+2015-12-06 18:03:16,423 main DEBUG dao.Dao (Dao.java:76) - INSERT INTO Scores values(3, 'QUFI', false)
+2015-12-06 18:03:16,427 main DEBUG dao.ScoreDao (ScoreDao.java:59) - Added 1 rows
+2015-12-06 18:03:16,587 main INFO  gis.Gis (Gis.java:98) - 2015-12-07T02:03:16.587Z
+2015-12-06 18:03:16,588 main INFO  gis.Gis (Gis.java:99) - Duration: 9519 ms
+2015-12-06 18:03:20,341 AWT-EventQueue-0 DEBUG dao.PlayerDao (PlayerDao.java:118) - SELECT * FROM Players
+2015-12-06 18:03:20,346 AWT-EventQueue-0 DEBUG dao.PlayerDao (PlayerDao.java:135) - Loaded 5 last names from the database
+2015-12-06 18:03:20,346 AWT-EventQueue-0 DEBUG dao.PlayerDao (PlayerDao.java:148) - SELECT * FROM Players WHERE lastName = 'Fish'
+2015-12-06 18:03:20,352 AWT-EventQueue-0 DEBUG dao.PlayerDao (PlayerDao.java:148) - SELECT * FROM Players WHERE lastName = 'Nash'
+2015-12-06 18:03:20,356 AWT-EventQueue-0 DEBUG dao.PlayerDao (PlayerDao.java:148) - SELECT * FROM Players WHERE lastName = 'Washington'
+2015-12-06 18:03:20,362 AWT-EventQueue-0 DEBUG dao.PlayerDao (PlayerDao.java:148) - SELECT * FROM Players WHERE lastName = 'Price'
+2015-12-06 18:03:20,368 AWT-EventQueue-0 DEBUG dao.PlayerDao (PlayerDao.java:148) - SELECT * FROM Players WHERE lastName = 'Chan'
+2015-12-06 18:03:24,691 AWT-EventQueue-0 DEBUG dao.PersonaDao (PersonaDao.java:112) - SELECT * FROM Personas
+2015-12-06 18:03:24,694 AWT-EventQueue-0 DEBUG dao.PersonaDao (PersonaDao.java:129) - Loaded 11 gamer tags from the database
+2015-12-06 18:03:24,695 AWT-EventQueue-0 DEBUG dao.PersonaDao (PersonaDao.java:142) - SELECT * FROM Personas WHERE gamerTag = 'Ithroeann'
+2015-12-06 18:03:24,700 AWT-EventQueue-0 DEBUG dao.PersonaDao (PersonaDao.java:142) - SELECT * FROM Personas WHERE gamerTag = 'Cirronith'
+2015-12-06 18:03:24,704 AWT-EventQueue-0 DEBUG dao.PersonaDao (PersonaDao.java:142) - SELECT * FROM Personas WHERE gamerTag = 'Deathstar'
+2015-12-06 18:03:24,709 AWT-EventQueue-0 DEBUG dao.PersonaDao (PersonaDao.java:142) - SELECT * FROM Personas WHERE gamerTag = 'Mazzzap'
+2015-12-06 18:03:24,713 AWT-EventQueue-0 DEBUG dao.PersonaDao (PersonaDao.java:142) - SELECT * FROM Personas WHERE gamerTag = 'Redstripe'
+2015-12-06 18:03:24,717 AWT-EventQueue-0 DEBUG dao.PersonaDao (PersonaDao.java:142) - SELECT * FROM Personas WHERE gamerTag = 'Crayonbreath'
+2015-12-06 18:03:24,723 AWT-EventQueue-0 DEBUG dao.PersonaDao (PersonaDao.java:142) - SELECT * FROM Personas WHERE gamerTag = 'Quinesia'
+2015-12-06 18:03:24,729 AWT-EventQueue-0 DEBUG dao.PersonaDao (PersonaDao.java:142) - SELECT * FROM Personas WHERE gamerTag = 'VolcanoBrawler'
+2015-12-06 18:03:24,737 AWT-EventQueue-0 DEBUG dao.PersonaDao (PersonaDao.java:142) - SELECT * FROM Personas WHERE gamerTag = 'CastleRock'
+2015-12-06 18:03:24,742 AWT-EventQueue-0 DEBUG dao.PersonaDao (PersonaDao.java:142) - SELECT * FROM Personas WHERE gamerTag = 'TorpedoBear'
+2015-12-06 18:03:24,747 AWT-EventQueue-0 DEBUG dao.PersonaDao (PersonaDao.java:142) - SELECT * FROM Personas WHERE gamerTag = 'GreenPanda'
+2015-12-06 18:03:28,499 AWT-EventQueue-0 DEBUG dao.ScoreDao (ScoreDao.java:111) - SELECT * FROM Scores
+2015-12-06 18:03:28,502 AWT-EventQueue-0 DEBUG dao.ScoreDao (ScoreDao.java:135) - Loaded 11 last names from the database
+2015-12-06 18:03:28,503 AWT-EventQueue-0 DEBUG dao.ScoreDao (ScoreDao.java:192) - SELECT * FROM Scores WHERE personaId = 1
+2015-12-06 18:03:28,507 AWT-EventQueue-0 DEBUG dao.ScoreDao (ScoreDao.java:192) - SELECT * FROM Scores WHERE personaId = 2
+2015-12-06 18:03:28,510 AWT-EventQueue-0 DEBUG dao.ScoreDao (ScoreDao.java:192) - SELECT * FROM Scores WHERE personaId = 3
+2015-12-06 18:03:28,514 AWT-EventQueue-0 DEBUG dao.ScoreDao (ScoreDao.java:192) - SELECT * FROM Scores WHERE personaId = 4
+2015-12-06 18:03:28,517 AWT-EventQueue-0 DEBUG dao.ScoreDao (ScoreDao.java:192) - SELECT * FROM Scores WHERE personaId = 5
+2015-12-06 18:03:28,521 AWT-EventQueue-0 DEBUG dao.ScoreDao (ScoreDao.java:192) - SELECT * FROM Scores WHERE personaId = 6
+2015-12-06 18:03:28,525 AWT-EventQueue-0 DEBUG dao.ScoreDao (ScoreDao.java:192) - SELECT * FROM Scores WHERE personaId = 7
+2015-12-06 18:03:28,528 AWT-EventQueue-0 DEBUG dao.ScoreDao (ScoreDao.java:192) - SELECT * FROM Scores WHERE personaId = 8
+2015-12-06 18:03:28,531 AWT-EventQueue-0 DEBUG dao.ScoreDao (ScoreDao.java:192) - SELECT * FROM Scores WHERE personaId = 9
+2015-12-06 18:03:28,535 AWT-EventQueue-0 DEBUG dao.ScoreDao (ScoreDao.java:192) - SELECT * FROM Scores WHERE personaId = 10
+2015-12-06 18:03:28,539 AWT-EventQueue-0 DEBUG dao.ScoreDao (ScoreDao.java:192) - SELECT * FROM Scores WHERE personaId = 11
